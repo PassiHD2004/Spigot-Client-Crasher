@@ -26,7 +26,7 @@ public class Command_Crash implements CommandExecutor {
 			} else if(args.length == 1) {
 				Player target = Bukkit.getServer().getPlayer(args[0]);
 				if(target == null){
-					p.sendMessage("Der Spieler" + args[0] + " ist nicht online!");
+					p.sendMessage("Der Spieler " + args[0] + " ist nicht online!");
 					
 				} else if(target.getName().equalsIgnoreCase(p.getName())){
 					p.sendMessage("§CDu willst dich doch nicht selber crashen oder?");
